@@ -38,6 +38,8 @@ let film1 = prompt('Один из последних просмотренных 
 let rating1 = prompt('На сколько оцените его?','');
 let film2 = prompt( 'Один из последних просмотренных фильмов?','');
 let rating2 = prompt('На сколько оцените его?','');
+
+
 personalMovieDB.movies[film1] =  rating1;
 personalMovieDB.movies[film2] =  rating2;
 console.log(numberOfFilms);
