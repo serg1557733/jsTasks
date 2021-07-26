@@ -22,29 +22,30 @@
 Проверить, чтобы все работало без ошибок в консоли */
 
 'use strict';
-let numberOfFilms = prompt('Сколько фильмов вы уже посмотрели?','');
 
+let num = '20';
 
-let personalMovieDB = {
-    count:numberOfFilms,
-    movies : {
-    },
-    actors : {},
-    genres :[],
-    privat : false
-};
+if (num < 49) {
+    console.log('error');
+} else if (num >100)
+{
+    console.log('too mach');
+} else if (num = 50) {
+    console.log('ok');
+}
 
-let film1 = prompt('Один из последних просмотренных фильмов?','');
-let rating1 = prompt('На сколько оцените его?','');
-let film2 = prompt( 'Один из последних просмотренных фильмов?','');
-let rating2 = prompt('На сколько оцените его?','');
-
-
-personalMovieDB.movies[film1] =  rating1;
-personalMovieDB.movies[film2] =  rating2;
-console.log(numberOfFilms);
-console.log(personalMovieDB);
-
-
-
-
+(num === 50) ? console.log('ok') : console.log('error7');
+    
+switch (num) {
+    case 49: 
+        console.log('erroooo');
+        break;
+    case '20':
+        console.log('то 50');
+    case 40:
+        console.log('yes');
+        break;
+    default:  console.log('default');
+    
+        
+}
