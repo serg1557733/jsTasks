@@ -102,7 +102,7 @@ while (num < 55)  */
 4) Потренироваться и переписать цикл еще двумя способами*/
 
 // Код возьмите из предыдущего домашнего задания
-let numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?','');
+/* let numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?','');
 
 
 let personalMovieDB = {
@@ -127,7 +127,7 @@ for (let i = 0; i < 2; i++) {
    }
 }
 
-console.log(personalMovieDB);
+console.log(personalMovieDB); */
 /* 
 if (personalMovieDB.count <= 10) {
     console.log("Просмотрено довольно мало фильмов");
@@ -142,7 +142,7 @@ else   {
     console.log("Произошла ошибка");
 } */
 
-while (personalMovieDB.count <= 10) {
+/* while (personalMovieDB.count <= 10) {
     console.log("Просмотрено довольно мало фильмов");
     break;
 }
@@ -156,4 +156,47 @@ while (personalMovieDB.count >= 30) {
 }
 
 
-console.log(personalMovieDB.count);
+console.log(personalMovieDB.count); */
+
+//Функции, стрелочные ф-ции (ES6)
+
+let num = 20;
+
+function showFirstMessage(text){
+        console.log(text);
+         let num = 10;
+         console.log(num);
+}
+showFirstMessage('test');
+console.log(num);
+
+function calc (a, b) {
+    return (a + b);
+    console.log(calc(4,3));//нечитаемый код
+
+}
+console.log(calc(4,3));
+console.log(calc(7,7));
+console.log(calc(8,3));
+
+//function declaration
+function ret (){
+    let num = 50;
+    return num;
+}
+let anotherNumm = ret();
+console.log(anotherNumm);
+
+
+//function expression
+const logger = function (){
+    console.log('hello')
+};
+logger();
+
+const calcul = (a, b) => {return a + b};
+console.log(calcul(8, 2));
+
+const calcu = a =>  a + 4;
+console.log(calcu(2));
+
