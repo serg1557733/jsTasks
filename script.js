@@ -1,3 +1,5 @@
+'use strict';
+
 /* Задание на урок:
 
 1) Создать переменную numberOfFilms и в неё поместить ответ от пользователя на вопрос:
@@ -21,7 +23,7 @@
 
 Проверить, чтобы все работало без ошибок в консоли */
 
-'use strict';
+
 /* let numberOfFilms = prompt('Сколько фильмов вы уже посмотрели?','');
 
 
@@ -237,6 +239,146 @@ console.log(Math.round(num)); */ //округление числа
 console.log(parseInt(test)+2); //преобразование строки в целое число
 
 console.log(parseFloat(test)); //в число с плавающей точкой */
+
+//callback functions
+
+/* function first() {
+    setTimeout(function() {
+        console.log('1');},500)
+};
+
+function second() {
+    console.log('2');
+}
+first();
+second();
+
+function learning(arg, callback) {
+    console.log(`i learn ${arg}`);
+    callback();
+}
+function done() {
+    console.log('i studied JS');
+}
+
+learning('JAVA', done);
+ */
+//деструктуризация 
+
+/* const obj = {
+    name: 'TEST',
+    width: 1024,
+    hight: 1024,
+    colors: {
+        border: 'black',
+        background: 'red'
+    },
+    makeTest: function(){
+        console.log('Test');
+    }
+
+}; */
+/* console.log(obj.name);
+
+delete obj.colors.background;
+
+console.log(obj); */
+
+
+//перебор ключей и свойств обьекта
+
+/* 
+for (let key in obj) {
+
+    if (typeof(obj[key]) === 'object')
+    {
+        for (let i in obj[key]) 
+        {
+            console.log(`ins option ${i} had  value ${obj[key][i]}`);
+        }
+        
+    }
+    else {    
+            console.log(`option ${key} had  value ${obj[key]}`);
+            
+        }  
+} */
+//счетчик свойств в обьекте
+/* let counter = 0;
+ for (let key in obj) {
+     counter++;
+ }
+
+console.log(counter);
+console.log(Object.keys(obj).length); */
+
+//метод обьекта создан через ключ 
+
+/* obj.makeTest() */ //запуск метода обьекта
+
+
+//деструктуризация
+
+/* let {border} =obj.colors ;
+console.log(border);
+
+let {border: br, bg} =obj.colors ;
+console.log(br); */
+
+//Методы массивов
+
+/* const arr = [2, 10, 12, 8, 7]; */
+
+//arr.pop(); удалить последний элемент 
+//arr.push(0,66); добавит ьэлементы в конец
+//console.log(arr.length);
+
+
+//перебор элементов массива циклом
+/* for (let i = 0; i< arr.length; i++) {
+    console.log(arr[i]);
+}
+
+for (let item of arr) {
+    console.log(item);
+
+} */
+
+/* arr.forEach(function(value, i)
+{
+     console.log(value*2) ;
+
+}); */
+
+
+/* console.log(arr);
+
+let arr2 = arr.map(item =>item*2);
+
+console.log(arr2);
+
+ */
+
+/* const str = prompt('','');
+const splitStr = str.split(''); */
+
+//sort сортирует все как строки
+
+/* arr.sort(compareNum);
+
+
+
+splitStr.sort();
+
+console.log(arr); */
+
+
+//алгоритм быстрой сортировки - применяем шаблон и сортировка цифр работает норм
+/* function compareNum( a,b) {
+    return a-b;
+} */
+
+//псевдомассивы, структура хранения данных по порядку - тот же массив но без методов
 
 
 

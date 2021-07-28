@@ -99,7 +99,7 @@ genres
 
 P.S. Функции вызывать не обязательно*/
 
-let numberOfFilms;
+/* let numberOfFilms;
 
 function start() {
 
@@ -171,5 +171,6 @@ function writeYourGenres() {
 }
 
 writeYourGenres();
-showMyDB();
+showMyDB(); */
+
 
