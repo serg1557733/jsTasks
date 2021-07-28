@@ -160,7 +160,7 @@ console.log(personalMovieDB.count); */
 
 //Функции, стрелочные ф-ции (ES6)
 
-let num = 20;
+/* let num = 20;
 
 function showFirstMessage(text){
         console.log(text);
@@ -172,24 +172,24 @@ console.log(num);
 
 function calc (a, b) {
     return (a + b);
-    console.log(calc(4,3));//нечитаемый код
+    console.log(calc(4,3)); //нечитаемый код
 
 }
 console.log(calc(4,3));
 console.log(calc(7,7));
-console.log(calc(8,3));
+console.log(calc(8,3)); */
 
 //function declaration
-function ret (){
+/* function ret (){
     let num = 50;
     return num;
 }
 let anotherNumm = ret();
-console.log(anotherNumm);
+console.log(anotherNumm); */
 
 
 //function expression
-const logger = function (){
+/* const logger = function (){
     console.log('hello')
 };
 logger();
@@ -199,4 +199,44 @@ console.log(calcul(8, 2));
 
 const calcu = a =>  a + 4;
 console.log(calcu(2));
+ */
+
+
+
+//const str = 'tEst';
+
+//onsole.log(str.length); //количество символов строки длинна
+
+/* const arr = [1, 8, 10];
+
+console.log(arr.length);
+
+let str1 = "Hello\nWorld";*/
+//console.log(str.toLowerCase());  
+
+
+//let fruit = 'some fruit';
+
+//console.log(fruit.indexOf('y'));  //если не надено совпадений выдаст -1
+
+/* const logg = 'Hello world';
+
+console.log(logg.slice(2)); // end аргумент принимает значение +1
+
+
+console.log(logg.substr(2)===logg.slice(2)); */
+
+
+/* const num = 12.5;
+
+console.log(Math.round(num)); */ //округление числа
+
+/* const test = '12.2px';
+
+
+console.log(parseInt(test)+2); //преобразование строки в целое число
+
+console.log(parseFloat(test)); //в число с плавающей точкой */
+
+
 
