@@ -525,7 +525,61 @@ console.log(typeof(strObj)); */
 jonh.sayHello();
 console.log(jonh.armor); */
 
+//динамическая типизация
+
+//console.log(typeof(+null));
+//console.log(typeof(null+''));//allways type - string for concatination 
+//let fontSize = 5 + 'px';//dinamic typization
+//console.log(typeof('ddg' + num));
+//let answer = +prompt('hi', ''); //type data at users - string always
+
+//to boolean
+
+//false will be -
+  //'', 0, null, undefined, NaN;
+/* 
+  let switcher = null;
+
+  if (switcher) {
+      console.log('working');
+  } else {
+      console.log('error');
+  }
+
+
+switcher = 1;
+ */
+
+//TESTING
+
+//console.log(typeof(!!444)); //  !! to Boolean
+
+ //let x = 5; alert( ++x );
+
+//console.log( [] + false - null + true);// [] empty array = '' empty string  ; NAN becose null + string
+
+ //let y = 1; let x = y = 2; alert(x); //последовательное присваивание
+
+ //console.log([ ] + 1 + 2); // empty array is a string + number = concatination
+
+ //alert( "1"[0] );//выводим символ под номером [0] в строке "1"
+
+ //console.log(2 && 1 && null && 0 && undefined );// null так как оператор И запинается на false и возвращает его
+
+ //console.log(!!( 1 && 2 ) == (1 && 2));// false так как !! превращает віражение в boolean;
+
+
+// alert( null || 2 && 3 || 4 ); // 3 ИЛИ- приоритет выше- запинается на правде, И на лжи и возвращает ее значение 
 
 
 
+ //let a = [1, 2, 3],
+     //   b = [1, 2, 3]; 
 
+      //  console.log(a===b); // false так как разные переменные разные хранилища с одним и тем же содержимым
+
+      //  alert( +"Infinity" ); // Infinity Number becose + before string
+        
+//console.log("Ёжик" > "яблоко");//false - unicode table 
+
+//console.log(0 || true || 2 || undefined || true || falsе );// 2 - первая попавщаяся правда слева-направо

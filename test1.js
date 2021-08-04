@@ -84,7 +84,7 @@ P.S. Функции вызывать не обязательно*/
 при помощи метода forEach вывести в консоль сообщения в таком виде:
 "Любимый жанр #(номер по порядку, начиная с 1) - это (название из массива)"*/
 
-let personalMovieDB = {
+/* let personalMovieDB = {
     count:0,
     movies : {
     },
@@ -160,7 +160,7 @@ let personalMovieDB = {
 };
 personalMovieDB.writeYourGenres();
 personalMovieDB.toggleVisibleMyDB();
-personalMovieDB.showMyDB();
+personalMovieDB.showMyDB(); */
 
 
 
