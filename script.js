@@ -380,5 +380,113 @@ console.log(arr); */
 
 //псевдомассивы, структура хранения данных по порядку - тот же массив но без методов
 
+//предача значения по ссылке
 
+/* let a = 5,
+    b = a;
+
+b = b + 5;
+console.log(b);
+console.log(a);
+
+const obj = {
+    a: 5,
+    b: 1
+}; */
+
+/* const copy = obj;//модифицирует начальный обьект(на примитивах все работает)но на обьектах идет передача по ссылке
+
+copy.a = 10;
+
+console.log (copy);
+console.log(obj); */
+
+//как создавать копии массивов и обьектов 
+//1циклы
+/* function copy(mainObj) {
+    let objCopy = {};
+    let key;
+    for (key in mainObj){
+        objCopy[key] = mainObj[key];
+    }
+    return objCopy;
+}
+const num = {
+    a: 2,
+    b: 5,
+    c: {
+        x: 7,
+        y: 4
+    }
+};
+
+const newNum = copy(num);//поверхностная копия без вложенностей
+
+newNum.a = 10; 
+newNum.c.x = 10;//значение вложенн так же измениться в начальном обьекте
+console.log(newNum);
+console.log(num);
+
+//метод objassign
+
+const add = {
+    d: 17,
+    e: 20
+};
+console.log(Object.assign(num, add));//создает независимую поверх копию
+
+ */
+
+const add = {
+    d: 17,
+    e: 20
+};
+
+const add1 = Object.assign({},add);
+add1.d = 22;
+/* console.log(add1);
+console.log(add); */
+
+const oldArr = ['a', 'b', 'c'];
+//const newArr = oldArr;//передача значения по ссылке
+const newArr = oldArr.slice();//независим поверхностная копия
+newArr[1] = 'sdgsdg';
+
+console.log(oldArr);
+console.log(newArr);
+
+//спред оператор оператор разворота
+
+const video = ['youtube', 'vimeo', 'rutube'],
+      blogs = ['wordpress', 'livejornal', 'blogger'],
+      internet = [...video, ...blogs, 'vk', 'facebook'];
+
+console.log(internet);
+
+function log(a, b, c) {
+          console.log(a);
+          console.log(b);
+          console.log(c);
+
+      }
+const link = [0, 2, 5, 7, 8];
+
+log(...link);
+
+
+const array = ['a', 'f'];
+
+const newArray = [...array];
+newArray[0] = 88;
+console.log(newArray);
+console.log(array);
+const q = {
+    one: 1,
+    two: 7
+};
+
+const newQ = {...q};
+newQ.one = 77;
+console.log(newQ);
+console.log(q);
 
