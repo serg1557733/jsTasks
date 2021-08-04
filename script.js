@@ -437,27 +437,27 @@ console.log(Object.assign(num, add));//создает независимую п�
 
  */
 
-const add = {
+/* const add = {
     d: 17,
     e: 20
 };
 
 const add1 = Object.assign({},add);
-add1.d = 22;
+add1.d = 22; */
 /* console.log(add1);
 console.log(add); */
 
-const oldArr = ['a', 'b', 'c'];
+/* const oldArr = ['a', 'b', 'c']; */
 //const newArr = oldArr;//передача значения по ссылке
-const newArr = oldArr.slice();//независим поверхностная копия
-newArr[1] = 'sdgsdg';
+//const newArr = oldArr.slice();//независим поверхностная копия
+/* newArr[1] = 'sdgsdg';
 
 console.log(oldArr);
-console.log(newArr);
+console.log(newArr); */
 
 //спред оператор оператор разворота
 
-const video = ['youtube', 'vimeo', 'rutube'],
+/* const video = ['youtube', 'vimeo', 'rutube'],
       blogs = ['wordpress', 'livejornal', 'blogger'],
       internet = [...video, ...blogs, 'vk', 'facebook'];
 
@@ -489,4 +489,43 @@ const newQ = {...q};
 newQ.one = 77;
 console.log(newQ);
 console.log(q);
+ */
+
+
+//ООП , прототипно ориентированное программирование -частный случай ооп стоится все на прототипах
+
+/* let str = 'some';
+let strObj = new String(str);
+
+console.log(typeof(str));
+console.log(typeof(strObj)); */
+
+//console.dir([1,2,3]);
+
+/* const soldier = {
+    health: 400,
+    armor: 100,
+    sayHello: function() {
+        console.log('Hello')
+    }
+};
+ */
+/* const jonh = {
+    health: 100
+}; */
+
+//jonh.__proto__ = soldier;//old method -don`t use!
+
+
+//Object.setPrototypeOf(jonh, soldier);//in dinamic
+
+/* const jonh = Object.create(soldier);
+
+
+jonh.sayHello();
+console.log(jonh.armor); */
+
+
+
+
 
