@@ -1,4 +1,4 @@
-'use strict';
+
 
 /* Задание на урок:
 
@@ -572,14 +572,182 @@ switcher = 1;
 // alert( null || 2 && 3 || 4 ); // 3 ИЛИ- приоритет выше- запинается на правде, И на лжи и возвращает ее значение 
 
 
+/* 
+ let a = [1, 2, 3],
+       b = [1, 2, 3]; 
 
- //let a = [1, 2, 3],
-     //   b = [1, 2, 3]; 
+       console.log(a===b); // false так как разные переменные разные хранилища с одним и тем же содержимым
 
-      //  console.log(a===b); // false так как разные переменные разные хранилища с одним и тем же содержимым
-
-      //  alert( +"Infinity" ); // Infinity Number becose + before string
+       alert( +"Infinity" ); // Infinity Number becose + before string
         
-//console.log("Ёжик" > "яблоко");//false - unicode table 
+console.log("Ёжик" > "яблоко");//false - unicode table 
 
-//console.log(0 || true || 2 || undefined || true || falsе );// 2 - первая попавщаяся правда слева-направо
+console.log(0 || true || 2 || undefined || true || falsе );// 2 - первая попавщаяся правда слева-направо */
+
+/* let obj = {
+    x: 5,
+    y: 6
+}
+
+const prop = Object
+    .keys(obj)
+    .reverse()
+    .join('')
+
+    obj.xy = 30
+    obj.yx = 40
+    obj.x10y20 = 50
+    obj.y20x10 = 60
+
+console.log(obj); */
+
+/* const str = 'h2h40h'
+
+const res = str.split('h')
+.map(s=>s+10)
+.filter(s => s.length >3)
+
+console.log(res); */
+
+/*  let user = {
+     ret: 'ff',
+     eeh: 45
+ };
+
+ let hh = {};
+
+  function isEmpty(obj) {
+      for (let key in obj)
+      {return false;
+      } 
+    return true;
+    
+  }
+
+  console.log(isEmpty(hh));
+
+ */
+/*   let salaries = {
+    John: 100,
+    Ann: 160,
+    Pete: 130
+  }
+
+  let sum = 0;
+
+  for (let key in salaries) {
+      sum += salaries[key]
+  }
+
+  console.log(sum);
+ */
+
+  // до вызова функции
+/* let menu = {
+    width: 200,
+    height: 300,
+    title: "My menu",
+    file: {
+        ner: 25,
+        mrt: 17
+    }
+  };
+   */
+
+/* function multiplyNumeric(obj) {
+    for (let key in obj) {
+        if ( typeof(obj[key]) == 'number'){
+            obj[key] *= 2;
+        }
+    }
+} 
+menu.file.mrt = 100;
+let menu1 = Object.assign({},menu);
+
+
+
+  multiplyNumeric(menu);
+
+
+  console.log(menu1);
+  console.log(menu); */
+ // let obj = {
+ //     '1': 0, 
+ //     1: 1, 
+ //     0: 2};
+
+//console.log(obj[0]);//why&
+
+/* let user = {
+    name: 'ivan',
+    age: 30,
+    sayHi() {
+        console.log(this.name);
+    }
+};
+
+let admin = user;
+user = null;
+
+admin.sayHi(); */
+
+/* let user = {name: 'sterko'};
+let admin = {name: 'vitek'};
+function f() {
+    console.log(this);
+}
+f(); */
+/* 
+function User(name, status) {
+    this.name = name;
+    this.isAdmin = status;
+     new.target;
+}
+let user = new User('vasia', true);
+
+console.log(user.name);
+console.log(user.isAdmin);
+
+let farik = new User('farik', false);
+
+console.log(farik.name);
+console.log(farik.isAdmin);
+let ret = new User('dgds', true); */
+/* 
+function Calculator() {
+    this.read = function() {
+        this.a = +prompt('a','');
+        this.b = +prompt('b','');
+    };
+    this.sum = function() {
+        return this.a + this.b;
+    };
+     this.mul = function() {
+        return this.a*this.b;
+     };
+}
+
+let calc = new Calculator();
+
+calc.read();
+console.log(calc.sum());
+console.log(calc.mul());
+ */
+
+/* function Accumulator(startValue) {
+    this.value = startValue;
+    this.read = function() {
+        this.value += +prompt('enter number','');
+       
+    };
+} */
+/* let ret = {
+    adress: {
+        str7eet:'777',
+    },
+};
+
+console.log(ret.adres.street); */
+
+let id = Symbol("id777");
+alert(id.toString());
