@@ -749,5 +749,106 @@ console.log(calc.mul());
 
 console.log(ret.adres.street); */
 
-let id = Symbol("id777");
-alert(id.toString());
+/* let id = Symbol("id777");
+alert(id.toString()); */
+/* let str = 'Hello';
+str[8] ='P';
+console.log(str);
+console.log(str[0]);8583
+
+ */
+/* function greeting(name) {
+    alert(122 + name);
+  }
+  
+  function processUserInput(callback) {
+    var name = +prompt('Please enter your name.');
+    callback(name);
+  }
+  
+  processUserInput(greeting); */
+/* 
+  let arr = ["Bbo", "Gandf", "Nazgul"];
+  
+  let arrCopy = arr.slice(1,2);
+
+
+ console.log(arr); // 5,7,6
+ console.log(arrCopy); // 5,7,6 */
+
+ 
+  
+  //console.log(users.find(index => index == 75); // Вася
+  
+  
+  //let users = [75, 8, 45, -9];
+  
+  //let user = users.find(item => item.id == 0);
+ 
+
+ /*  function BigUser() {
+
+    this.name = "Вася";
+  
+    return this;  // <-- возвращает этот объект
+  }
+  let user = new BigUser();
+  alert( user.name );  // Godzilla, получили этот объект */
+
+  /* async function getUsers(names) {
+    let jobs = [];
+  
+    for(let name of names) {
+      let job = fetch(`https://api.github.com/users/${name}`).then(
+        successResponse => {
+          if (successResponse.status != 200) {
+            return null;
+          } else {
+            return successResponse.();
+          }
+        },
+        failResponse => {
+          return null;
+        }
+      );
+      jobs.push(job);
+    }
+  
+    let results = await Promise.all(jobs);
+  console.log(results);
+    return results;
+  }
+
+  getUsers('serg1557733');
+
+ */
+
+/* let elem = document.querySelector('body');
+/* elem.onclick = function(event) {
+    // вывести тип события, элемент и координаты клика
+    console.log(event.type + " на " + event.currentTarget);
+   console.log("Координаты: " + event.clientX + "x:y" + event.clientY);
+  }; */
+
+/*   class Menu {
+    handleEvent(event) {
+      switch(event.type) {
+        case 'mouseover':
+          console.log(event.type + " на " + event.currentTarget);
+          console.log("Координаты: " + event.clientX + "x:y" + event.clientY);
+          break;
+        case 'mouseout':
+          elem.innerHTML += "...и отжата.";
+          console.log(event.type + " на " + event.currentTarget);
+          break;
+      }
+    }
+  }
+
+  let menu = new Menu();
+  elem.addEventListener('mouseover', menu);
+  elem.addEventListener('mouseout', menu);
+ */
+
+  
+   

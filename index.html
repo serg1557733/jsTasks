@@ -7,6 +7,35 @@
     <title>JS lessons</title>
 </head>
 <body>
+
+    <form action="#" name="my">
+        <input type="text" id="input" >
+        <label for="input" style="background-color: blue;">жми</label>
+        <button type="submit" id="rere">send</button>
+    </form>
+    <div id="elem">nene </div>
+    <form action="handler.php">
+        <fieldset>
+         <legend>Работа со временем</legend>
+           <input type="checkbox"> создание пунктуальности (никогда не 
+            будете никуда опаздывать);<br>
+           <input type="checkbox"> излечение от пунктуальности (никогда 
+            никуда не будете торопиться);<br>
+           <input type="checkbox"> изменение восприятия времени и часов.
+            <p></p><input type="submit"></p>
+        </fieldset>
+       </form> 
+
+       <select id="select" size="3">
+        <option value="apple">Яблоко</option>
+        <option value="pear">Груша</option>
+        <option value="banana">Банан</option>
+      </select>
+      <form onclick="alert(event.target + this)">FORM
+        <div onclick="alert(event.target + this)">DIV
+          <p onclick="alert(event.target + this)">P</p>
+        </div>
+      </form>
     <script src="script.js"></script>
     <script src="test.js"></script>
     <script src="test1.js"></script>
